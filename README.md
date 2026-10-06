@@ -27,18 +27,18 @@ Bu dizin, TP-Link EB810v (ve benzeri TP-Link modelleri) için yedek dosyaların�
 Hiçbir parametre vermeden çalıştırırsanız, klasördeki veya üst klasördeki `EB810v_backup_conf.bin` dosyasını otomatik olarak bulur ve çözer:
 
 ```powershell
-python mod/decrypt.py
+python decrypt.py
 ```
 
 Veya özel dosya isimleri belirterek:
 
 ```powershell
-python mod/decrypt.py EB810v_backup_conf.bin cozulmus_ayar.xml
+python decrypt.py EB810v_backup_conf.bin cozulmus_ayar.xml
 ```
 
 Varsayılan üzerine yazmak için:
 ```powershell
-python mod/decrypt.py -f EB810v_backup_conf.bin cozulmus_ayar.xml
+python decrypt.py -f EB810v_backup_conf.bin cozulmus_ayar.xml
 ```
 
 ---
@@ -48,12 +48,12 @@ python mod/decrypt.py -f EB810v_backup_conf.bin cozulmus_ayar.xml
 Düzenlediğiniz XML dosyasını modeme yüklenebilecek `conf.bin` formatına getirmek için:
 
 ```powershell
-python mod/encrypt.py cozulmus_ayar.xml EB810v_yeni_yedek.bin
+python encrypt.py cozulmus_ayar.xml EB810v_yeni_yedek.bin
 ```
 
 Otomatik mod (üst dizindeki `EB810v_backup_conf.xml` dosyasını bulur):
 ```powershell
-python mod/encrypt.py
+python encrypt.py
 ```
 
 ---
@@ -62,13 +62,13 @@ python mod/encrypt.py
 
 ```powershell
 # Çözme
-python mod/tpconf_tool.py decrypt EB810v_backup_conf.bin cozulmus.xml
+python tpconf_tool.py decrypt EB810v_backup_conf.bin cozulmus.xml
 
 # Şifreleme
-python mod/tpconf_tool.py encrypt cozulmus.xml yeni_yedek.bin
+python tpconf_tool.py encrypt cozulmus.xml yeni_yedek.bin
 
 # Dosya doğrulama ve anahtar testi
-python mod/tpconf_tool.py verify EB810v_backup_conf.bin
+python tpconf_tool.py verify EB810v_backup_conf.bin
 ```
 
 ---
