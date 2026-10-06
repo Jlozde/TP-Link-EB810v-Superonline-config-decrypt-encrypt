@@ -14,7 +14,7 @@ Bu dizin, TP-Link EB810v (ve benzeri TP-Link modelleri) için yedek dosyaların�
 | Dosya | Açıklama |
 |---|---|
 | [`decrypt.py`](decrypt.py) | Şifrelenmiş `.bin` yedek dosyasını açık `.xml` metnine çözer. |
-| [`encrypt.py`](encrypt.py) | Düzenlenmiş `.xml` dosyasını modemle uyumlu şifreli `.bin` dosyasına dönüştürür. |
+| [`encrypt.py`](encrypt.py) | Düzenlenmiş `.xml` dosyasını şifreli `.bin` dosyasına dönüştürür. |
 | [`tpconf_tool.py`](tpconf_tool.py) | Hepsi bir arada komut satırı aracı (`decrypt`, `encrypt`, `verify`). |
 | [`tpconf_core.py`](tpconf_core.py) | DES-ECB, MD5, LZSS sıkıştırma/açma motoru. |
 
