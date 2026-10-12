@@ -138,6 +138,8 @@ XML dosyasında `<X_TP_AppCfg>` etiketinin içine `<SSHCfg>` bloğunu ekleyin ve
 1. Düzenlediğiniz `config.xml` dosyasını modeminizin firmware sürümüne göre ilgili encrypt betiğiyle paketleyin:
    ```bash
    python encrypt_new_aes.py config.xml conf_mod.bin -f
+                   ^
+                   veya old
    ```
 2. Modemin web arayüzüne girin (`http://192.168.1.1` veya `http://192.168.55.1`).
 3. **Yönetim / Bakım (Management) -> Yedekleme ve Geri Yükleme (Backup & Restore)** sayfasına gidin.
